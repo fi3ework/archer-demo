@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <title>
+        
+        fi3ework&#39;s Studio
+        
+    </title>
+    <link rel="icon" href= /assests/favicon.ico>
+    <!-- 提前加载place holder  -->
+    <style>
+        @font-face {
+            font-family: 'Oswald-Regular';
+            src: url('/archer-demo/font/Oswald-Regular.ttf');
+        }
+        @font-face {
+            font-family: 'Source Sans Pro';
+            src: url('/archer-demo/font/Source Sans Pro.woff'),
+            url('/archer-demo/font/Source Sans Pro.woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Source Code Pro';
+            src: url('/archer-demo/font/SourceCodePro-Regular.ttf.woff'),
+            url('/archer-demo/font/SourceCodePro-Regular.ttf.woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        
+        .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0px;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2s ease-in-out 0s 15;
+        }
+        @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        99% {
+            transform: translate3d(0, 0, 0);
+        }
+        99.1% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(-226px, 0, 0);
+        }
+    }
+    </style>
+    <link rel="stylesheet" href="/archer-demo/css/style.css">
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" defer></script>
+    
+    <script src="/archer-demo/scripts/main.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+        <div class="toggle-banner">
+            <div class="blog-title">
+                <a href="/archer-demo/" >fi3ework&#39;s Studio.</a>
+            </div>
+            <div class="post-banner">
+                <span class="post-name"></span>
+            </div>
+        </div>
+    </div>
+    
+    <a class="home-link" href=/archer-demo/>fi3ework's Studio.</a>
+</header>
+    
+    
+    <div class="wrapper">
+        <div class="site-intro">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+    
+    <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/post-bg.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            [Untitled Post]
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+        </p>
+        <!-- 404 -->
+        
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2017/07/20</span>
+            </div>
+            <!-- 
+
+<div class="post-share iconfont-archer">
+    <ul class="share-box" data-href = "/archer-demo/2017-07-20-README/" data-title = "" >
+        <li class="to-weibo">分享到微博</li>
+        <li class="to-wechat">分享到微信</li>
+        <li class="to-qq">分享到QQ</li>
+        <li class="to-twitter">分享到twitter</li>
+    </ul>
+</div> -->
+        
+    </div>
+</div>
+        <div class="container">
+            <main class="main post-page">
+    <div class="qr-mask"></div>
+<div class="QRcode-box">
+    <p>扫描二维码分享</p>
+    <div class="QRcode-close">×</div>
+</div>
+    <article class="article-entry">
+        <h1 id="hexo-theme-archer"><a href="#hexo-theme-archer" class="headerlink" title="hexo-theme-archer"></a>hexo-theme-archer</h1><p><img src="./docs/snap.png" alt="preview"></p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li>点击<a href="http://firework.studio" target="_blank" rel="external">我的博客</a>在线预览。</li>
+<li>本主题受<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">yilia</a>主题和<a href="https://github.com/Huxpro/huxpro.github.io" target="_blank" rel="external">huxpro</a>主题的启发，结合了前者的sidebar设计及后者的UI设计完成，能够在不切换到archive页及tag的页的情况下通过侧边栏进行导航。</li>
+<li>兼容性：现代浏览器及IE10+。</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在Hexo根目录下执行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-json-content --save</div><div class="line">git clone https://github.com/fi3ework/hexo-theme-archer.git themes/archer</div></pre></td></tr></table></figure>
+<h2 id="启用"><a href="#启用" class="headerlink" title="启用"></a>启用</h2><p>修改Hexo根目录下的 <code>_config.yml</code> 的 <code>theme</code> 字段为 <code>archer</code>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">theme:</span> <span class="string">archer</span></div></pre></td></tr></table></figure>
+<h3 id="404页启用"><a href="#404页启用" class="headerlink" title="404页启用"></a>404页启用</h3><p>在Hexo目录下加入<code>Hexo/source/404.md</code>文件，<code>layout</code>字段为<code>404</code>，<code>title</code>字段为标题，<code>description</code>字段为描述。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">layout:</span> <span class="number">404</span></div><div class="line"><span class="attr">title:</span> <span class="string">"[404]"</span></div><div class="line"><span class="attr">description:</span> <span class="string">"May the Force be with you :&amp;#41;"</span></div></pre></td></tr></table></figure>
+<h3 id="sidebar启用"><a href="#sidebar启用" class="headerlink" title="sidebar启用"></a>sidebar启用</h3><p>在Hexo根目录下执行以下命令（同安装说明中的插件，若已安装可跳过此步骤）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-json-content --save</div></pre></td></tr></table></figure>
+<p>然后需在<strong>主题配置文件</strong>中添加以下字段</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="attr">jsonContent:</span></div><div class="line"><span class="attr">  meta:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  pages:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  posts:</span></div><div class="line"><span class="attr">    title:</span> <span class="literal">true</span></div><div class="line"><span class="attr">    date:</span> <span class="literal">true</span></div><div class="line"><span class="attr">    path:</span> <span class="literal">true</span></div><div class="line"><span class="attr">    text:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    raw:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    content:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    slug:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    updated:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    comments:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    link:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    permalink:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    excerpt:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    categories:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    tags:</span> <span class="literal">true</span></div></pre></td></tr></table></figure>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># ========== Profile ========== #</span></div><div class="line"><span class="comment"># ==========  侧边栏  ========== #</span></div><div class="line"><span class="comment"># avatar</span></div><div class="line"><span class="comment"># 头像路径</span></div><div class="line"><span class="attr">avatar:</span></div><div class="line"><span class="comment"># author name</span></div><div class="line"><span class="comment"># 博主名字，不填写该字段则默认采用博客配置文件中的author字段</span></div><div class="line"><span class="attr">author:</span></div><div class="line"><span class="comment"># signature</span></div><div class="line"><span class="comment"># 博客签名</span></div><div class="line"><span class="attr">signature:</span></div><div class="line"><span class="comment"># SNS</span></div><div class="line"><span class="comment"># 社交账号</span></div><div class="line"><span class="attr">social:</span></div><div class="line">  <span class="comment"># email:</span></div><div class="line">  <span class="comment"># github:</span></div><div class="line">  <span class="comment"># weibo:</span></div><div class="line">  <span class="comment"># zhihu:</span></div><div class="line">  <span class="comment"># facebook:</span></div><div class="line">  <span class="comment"># twitter:</span></div><div class="line">  <span class="comment"># instagram:</span></div><div class="line">  <span class="comment"># stack-overflow:</span></div><div class="line">  <span class="comment"># linkedin:</span></div><div class="line">  <span class="comment"># blog:</span></div><div class="line"><span class="comment"># friends</span></div><div class="line"><span class="comment"># 友链</span></div><div class="line"><span class="attr">friends:</span></div><div class="line">  <span class="comment"># friendA:</span></div><div class="line">  <span class="comment"># friendB:</span></div><div class="line">  <span class="comment"># friendC:</span></div><div class="line"></div><div class="line"><span class="comment"># ========== Site ========== #</span></div><div class="line"><span class="comment"># ========== 站点 ========== #</span></div><div class="line"><span class="comment"># title of the site</span></div><div class="line"><span class="comment"># title的标题，每篇文章后面也会加上此字段利于SEO</span></div><div class="line"><span class="attr">SEO_title:</span></div><div class="line"><span class="comment"># main title</span></div><div class="line"><span class="comment"># 网站显示在banner上的主标题</span></div><div class="line"><span class="attr">main_title:</span></div><div class="line"><span class="comment"># subtitle</span></div><div class="line"><span class="comment"># 网站显示在banner上的副标题</span></div><div class="line"><span class="attr">subtitle:</span></div><div class="line"><span class="comment"># header image</span></div><div class="line"><span class="comment"># 主页banner的背景图片</span></div><div class="line"><span class="attr">header_image:</span></div><div class="line"><span class="comment"># 404 image</span></div><div class="line"><span class="comment"># 404页的背景图片</span></div><div class="line"><span class="attr">_404_image:</span></div><div class="line"></div><div class="line"><span class="comment"># ========== Comment ========== #</span></div><div class="line"><span class="comment"># ========== 评论插件 ========== #</span></div><div class="line"><span class="comment"># 目前只支持一键添加livere评论（因为懒），其他评论插件可自行添加</span></div><div class="line"><span class="attr">comment:</span></div><div class="line">  <span class="comment"># change the value of livere to your livere data-uid</span></div><div class="line">  <span class="comment"># 将你的livere的uid填入以下字段</span></div><div class="line"><span class="attr">  livere:</span></div><div class="line"></div><div class="line"><span class="comment"># ========== Analytics ========== #</span></div><div class="line"><span class="comment"># ==========    统计   ========== #</span></div><div class="line"><span class="comment"># Busuanzi pv Analytics</span></div><div class="line"><span class="comment"># 是否开启不蒜子统计</span></div><div class="line"><span class="attr">busuanzi:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># Baidu analytics</span></div><div class="line"><span class="comment"># 百度统计(填写siteID)</span></div><div class="line"><span class="attr">baidu_analytics:</span></div><div class="line"><span class="comment"># Google analytics</span></div><div class="line"><span class="comment"># Google统计(填写siteID)</span></div><div class="line"><span class="attr">google_analytics:</span></div><div class="line"><span class="comment"># CNZZ统计</span></div><div class="line"><span class="comment"># CNZZ_analytics:</span></div><div class="line"></div><div class="line"><span class="comment"># ========== Others ========== #</span></div><div class="line"><span class="comment"># favicon</span></div><div class="line"><span class="attr">favicon:</span></div><div class="line"><span class="comment"># truncate length (the default is 300)</span></div><div class="line"><span class="comment"># 首页的文章摘要字数(默认300)</span></div><div class="line"><span class="attr">truncate_length:</span></div></pre></td></tr></table></figure>
+<h3 id="文章页banner图片配置"><a href="#文章页banner图片配置" class="headerlink" title="文章页banner图片配置"></a>文章页banner图片配置</h3><p>通过配置每篇文章的头部的<code>header_image</code>字段来修改，如果不填写将采用主题配置中的<code>post_header_image</code>字段，如果该字段未填写则采用<code>site_header_image</code>字段。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">header_image:</span> <span class="string">/intro/post-bg.jpg</span></div></pre></td></tr></table></figure>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>MIT</p>
+
+    </article>
+    <!-- 前后页  -->
+    <ul class="post-pager">
+        
+        
+            <li class="next">
+                <a href= "/archer-demo/2013-12-30-中文測試/" title= 中文測試 >
+                    <span>Next Post</span>
+                    <span>中文測試</span>
+                </a>
+            </li>
+        
+    </ul>
+    <!-- 来必力City版安装代码 -->
+
+    
+
+<!-- City版安装代码已完成 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="emailto:12345@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer github" target="_blank" title="github"></a>
+            
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span>
+        <span
+            id="theme-info">Theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+    </div>
+    <div class="back-top">&#xe639;</div>
+    <div class="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-category">
+            <span class="sidebar-archive-link"><span class="iconfont-archer">&#xe67d;</span>Archive</span>
+            <span class="sidebar-tags-link"><span class="iconfont-archer">&#xe610;</span>Tag</span>
+        </div>
+    </div>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-archive">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 16 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2017 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/20</span><a class="archive-post-title" href= "/archer-demo/2017-07-20-README/" >[Untitled Post]</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2013 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/30</span><a class="archive-post-title" href= "/archer-demo/2013-12-30-中文測試/" >中文測試</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/29</span><a class="archive-post-title" href= "/archer-demo/2013-12-29-日本語テスト/" >日本語テスト</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/26</span><a class="archive-post-title" href= "/archer-demo/2013-12-26-images/" >Images</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25-no-title/" >[Untitled Post]</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25-tag-plugins/" >Tag Plugins</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25-videos/" >Videos</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25-gallery-post/" >Gallery Post</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25-excerpts/" >Excerpts</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24-long-title/" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24-link-post/" >Link Post</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24-elements/" >Elements</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24-link-post-without-title/" >www.google.com</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24-tags/" >Tags</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24-categories/" >Categories</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24-hello-world/" >Hello World</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name"><a href= "#">Foo</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">Bar</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">Baz</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">语言</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">中文</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">日本語</a></span>
+    
+    </div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #888; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tag-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var jsInfo = {
+        root: '/archer-demo/'
+    }
+</script>
+    <!-- 不蒜子  -->
+    
+    <!-- CNZZ统计  -->
+    
+    </div>
+    <!--  browser-sync -->
+    <!-- <script id="__bs_script__">
+    //<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
+    //]]>
+    </script> -->
+</html>
+
+
