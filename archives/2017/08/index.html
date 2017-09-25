@@ -41,7 +41,7 @@
         background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
         background-position: center center;
         transform: translate3d(-226px, 0, 0);
-        animation: gradient-move 2s ease-in-out 0s 15;
+        animation: gradient-move 2s ease-out 0s 1;
         }
         @keyframes gradient-move {
         0% {
@@ -58,7 +58,7 @@
         }
     }
     </style>
-    <link rel="stylesheet" href="/archer-demo/css/style.css">
+    <link rel="stylesheet" href = "/css/style.css?v=20170925" />
     <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" defer></script>
     
     <script src="/archer-demo/scripts/main.js" defer></script>
@@ -68,8 +68,6 @@
     
 </head>
     
-        <body class="four-zero-four-body">
-    
     
 <header class="header">
 
@@ -78,53 +76,38 @@
     
     <a class="home-link" href=/archer-demo/>fi3ework's Studio.</a>
 </header>
-    
     <div class="wrapper">
         <div class="site-intro">
     
     <!-- 主页  -->
-    
-    
-    
-    <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/404.jpg)"></div>
+            
+    <div class="site-intro-img" style="background-image: url(/archer-demo/)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            [404]
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            <p class="intro-subtitle"> </p>
-        
         <!-- 文章页meta -->
         
     </div>
 </div>
         <div class="container">
             <main class="main index-page">
-    <div class="qr-mask"></div>
-<div class="QRcode-box">
-    <p>扫描二维码分享</p>
-    <div class="QRcode-close">×</div>
-</div>
     
     
     
         <article class="index-post">
             <a class="content-show-full" href = "/archer-demo/2017-08-14/hexo-theme-archer/" >
-                <div class="abstract-post-title">
                     <h2 class="abstract-title">
-                        <span>
-                            hexo-theme-archer
-                        </span>
+                        
+                        <span>hexo-theme-archer</span>
                     </h2>
-                </div>
                 <div class="abstract-content">
                     hexo-theme-archer
 说明
@@ -133,9 +116,9 @@ GitHub地址: 戳我:)
 本主题受yilia主题和huxpro主题的启发，结合了前者的sidebar设计及后者的UI设计完成，能够在不切换到archive页及tag的页的情况下通过侧边栏进行导航。
 兼容性：现代浏览器及IE10+。
 
-安装在Hexo根目录下执行
+安装在Hexo目录下执行
 12npm install hexo-generator-json-content --savegit clone https://github.com/fi3ework/hexo-theme-archer.git themes/archer
-启用修改Hexo根...
+启用修改Hexo目录...
                 </div>
             </a>
             <div class="abstract-post-meta">
@@ -187,9 +170,7 @@ GitHub地址: 戳我:)
     
     <!-- powered by Hexo  -->
     <div class="copyright">
-        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span>
-        <span
-            id="theme-info">Theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">archer</a></span>
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">Theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">archer</a></span>
     </div>
     <!-- 不蒜子  -->
     
@@ -206,16 +187,6 @@ GitHub地址: 戳我:)
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-archive">
     <!-- 在ejs中将archive按照时间排序 -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -444,7 +415,7 @@ GitHub地址: 戳我:)
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins/" >Tag Plugins</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/gallery-post/" >Gallery Post</a>
         </li>
     
     
@@ -454,32 +425,17 @@ GitHub地址: 戳我:)
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/gallery-post/" >Gallery Post</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/excerpts/" >Excerpts</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins/" >Tag Plugins</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/categories/" >Categories</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/tags/" >Tags</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/long-title/" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
         </li>
     
     
@@ -489,7 +445,22 @@ GitHub地址: 戳我:)
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/long-title/" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/categories/" >Categories</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/tags/" >Tags</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
         </li>
     
     
@@ -559,12 +530,7 @@ jsonContent:
     <!-- CNZZ统计  -->
     
     </div>
-    <!--  browser-sync -->
-    <!-- <script id="__bs_script__">
-    //<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
-    //]]>
-    </script> -->
+    </body>
 </html>
 
 

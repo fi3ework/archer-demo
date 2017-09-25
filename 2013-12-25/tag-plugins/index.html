@@ -41,7 +41,7 @@
         background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
         background-position: center center;
         transform: translate3d(-226px, 0, 0);
-        animation: gradient-move 2s ease-in-out 0s 15;
+        animation: gradient-move 2s ease-out 0s 1;
         }
         @keyframes gradient-move {
         0% {
@@ -58,7 +58,7 @@
         }
     }
     </style>
-    <link rel="stylesheet" href="/archer-demo/css/style.css">
+    <link rel="stylesheet" href = "/css/style.css?v=20170925" />
     <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" defer></script>
     
     <script src="/archer-demo/scripts/main.js" defer></script>
@@ -77,20 +77,16 @@
     <!-- post页的toggle banner  -->
     
     <div class="banner">
-        <div class="toggle-banner">
             <div class="blog-title">
                 <a href="/archer-demo/" >fi3ework&#39;s Studio.</a>
             </div>
-            <div class="post-banner">
-                <span class="post-name">Tag Plugins</span>
+            <div class="post-title">
+                <a href="#" class="post-name">Tag Plugins</a>
             </div>
-        </div>
     </div>
     
     <a class="home-link" href=/archer-demo/>fi3ework's Studio.</a>
 </header>
-    
-    
     <div class="wrapper">
         <div class="site-intro">
     
@@ -98,7 +94,7 @@
     
     
     <!-- 404页  -->
-    
+            
     <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/post-bg.jpg)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
@@ -126,26 +122,11 @@
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
                 <span class="post-intro-time">2013/12/25</span>
             </div>
-            <!-- 
-
-<div class="post-share iconfont-archer">
-    <ul class="share-box" data-href = "/archer-demo/2013-12-25/tag-plugins/" data-title = "Tag Plugins" >
-        <li class="to-weibo">分享到微博</li>
-        <li class="to-wechat">分享到微信</li>
-        <li class="to-qq">分享到QQ</li>
-        <li class="to-twitter">分享到twitter</li>
-    </ul>
-</div> -->
         
     </div>
 </div>
         <div class="container">
             <main class="main post-page">
-    <div class="qr-mask"></div>
-<div class="QRcode-box">
-    <p>扫描二维码分享</p>
-    <div class="QRcode-close">×</div>
-</div>
     <article class="article-entry">
         <p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="external">docs</a> for more info.</p>
 <h2 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h2><h3 id="Normal-blockquote"><a href="#Normal-blockquote" class="headerlink" title="Normal blockquote"></a>Normal blockquote</h3><blockquote>
@@ -176,27 +157,32 @@
     <!-- 前后页  -->
     <ul class="post-pager">
         
-            <li class="previous">
+            <li class="next">
                 <a href= "/archer-demo/2013-12-25/gallery-post/" title= Gallery Post >
-                    <span>Previous Post</span>
+                    <span>Next Post</span>
                     <span>Gallery Post</span>
                 </a>
             </li>
         
         
-            <li class="next">
+            <li class="previous">
                 <a href= "/archer-demo/2013-12-24/link-post-without-title/" title= www.google.com >
-                    <span>Next Post</span>
+                    <span>Previous Post</span>
                     <span>www.google.com</span>
                 </a>
             </li>
         
     </ul>
+
+
     <!-- 来必力City版安装代码 -->
 
-    
-
 <!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    
 </main>
             <!-- profile -->
             
@@ -226,9 +212,7 @@
     
     <!-- powered by Hexo  -->
     <div class="copyright">
-        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span>
-        <span
-            id="theme-info">Theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">archer</a></span>
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">Theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">archer</a></span>
     </div>
     <!-- 不蒜子  -->
     
@@ -245,16 +229,6 @@
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-archive">
     <!-- 在ejs中将archive按照时间排序 -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -483,7 +457,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins/" >Tag Plugins</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/gallery-post/" >Gallery Post</a>
         </li>
     
     
@@ -493,32 +467,17 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/gallery-post/" >Gallery Post</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/excerpts/" >Excerpts</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins/" >Tag Plugins</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/categories/" >Categories</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/tags/" >Tags</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/long-title/" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
         </li>
     
     
@@ -528,7 +487,22 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/long-title/" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/categories/" >Categories</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/tags/" >Tags</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
         </li>
     
     
@@ -598,12 +572,7 @@ jsonContent:
     <!-- CNZZ统计  -->
     
     </div>
-    <!--  browser-sync -->
-    <!-- <script id="__bs_script__">
-    //<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
-    //]]>
-    </script> -->
+    </body>
 </html>
 
 
