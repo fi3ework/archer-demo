@@ -182,34 +182,20 @@
             <main class="main post-page">
     <article class="article-entry">
         <h1 id="hexo-theme-archer"><a href="#hexo-theme-archer" class="headerlink" title="hexo-theme-archer"></a>hexo-theme-archer</h1><p><img src="/2017-08-14/hexo-theme-archer/snap.png" alt="preview"></p>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
-<li>GitHub地址: <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank" rel="external">戳我:)</a></li>
-<li>点击<a href="http://firework.studio" target="_blank" rel="external">我的博客</a>在线预览。</li>
-<li>本主题受<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">yilia</a>主题和<a href="https://github.com/Huxpro/huxpro.github.io" target="_blank" rel="external">huxpro</a>主题的启发，结合了前者的sidebar设计及后者的UI设计完成，能够在不切换到archive页及tag的页的情况下通过侧边栏进行导航。</li>
-<li>兼容性：现代浏览器及IE10+。</li>
-</ul>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在<strong>Hexo目录</strong>下执行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-json-content --save</div><div class="line">git clone https://github.com/fi3ework/hexo-theme-archer.git themes/archer</div></pre></td></tr></table></figure>
-<h2 id="启用"><a href="#启用" class="headerlink" title="启用"></a>启用</h2><p>修改<strong>Hexo目录</strong>下的 <code>_config.yml</code> 的 <code>theme</code> 字段为 <code>archer</code>：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">theme:</span> <span class="string">archer</span></div></pre></td></tr></table></figure>
-<h3 id="404页启用"><a href="#404页启用" class="headerlink" title="404页启用"></a>404页启用</h3><p>在<strong>Hexo资源目录</strong>下加入<code>/source/404.md</code>文件，<code>layout</code>字段须为<code>404</code>，<code>title</code>字段为自定义标题，<code>description</code>字段为自定义描述。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="attr">layout:</span> <span class="number">404</span></div><div class="line"><span class="attr">title:</span> <span class="string">"[404]"</span></div><div class="line"><span class="attr">description:</span> <span class="string">"May the Force be with you :&amp;#41;"</span></div></pre></td></tr></table></figure>
-<h3 id="sidebar启用"><a href="#sidebar启用" class="headerlink" title="sidebar启用"></a>sidebar启用</h3><ol>
-<li>在<em><strong>Hexo目录</strong></em>下执行以下命令（同安装说明中的插件，若已安装可跳过此步骤）</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-json-content --save</div></pre></td></tr></table></figure>
-<ol>
-<li>然后需在<em><strong>Hexo配置文件</strong></em>中添加以下字段<strong>（不是archer的主题配置文件）</strong></li>
-</ol>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="attr">jsonContent:</span></div><div class="line"><span class="attr">  meta:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  pages:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  posts:</span></div><div class="line"><span class="attr">    title:</span> <span class="literal">true</span></div><div class="line"><span class="attr">    date:</span> <span class="literal">true</span></div><div class="line"><span class="attr">    path:</span> <span class="literal">true</span></div><div class="line"><span class="attr">    text:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    raw:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    content:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    slug:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    updated:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    comments:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    link:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    permalink:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    excerpt:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    categories:</span> <span class="literal">false</span></div><div class="line"><span class="attr">    tags:</span> <span class="literal">true</span></div></pre></td></tr></table></figure>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># ========== 资料栏 ========== #</span></div><div class="line"><span class="comment"># 头像路径</span></div><div class="line"><span class="attr">avatar:</span></div><div class="line"><span class="comment"># 博主名字，不填写该字段则默认采用Hexo配置文件中的author字段</span></div><div class="line"><span class="attr">author:</span></div><div class="line"><span class="comment"># 博客签名</span></div><div class="line"><span class="attr">signature:</span></div><div class="line"><span class="comment"># 社交账号</span></div><div class="line"><span class="attr">social:</span></div><div class="line"><span class="attr">  email:</span></div><div class="line"><span class="attr">  github:</span></div><div class="line"><span class="attr">  weibo:</span></div><div class="line"><span class="attr">  zhihu:</span></div><div class="line"><span class="attr">  facebook:</span></div><div class="line"><span class="attr">  twitter:</span></div><div class="line"><span class="attr">  instagram:</span></div><div class="line"><span class="attr">  stack-overflow:</span></div><div class="line"><span class="attr">  linkedin:</span></div><div class="line"><span class="attr">  blog:</span></div><div class="line"><span class="comment"># 友链</span></div><div class="line"><span class="attr">friends:</span></div><div class="line"><span class="attr">  friendA:</span></div><div class="line"><span class="attr">  friendB:</span></div><div class="line"><span class="attr">  friendC:</span></div><div class="line"></div><div class="line"><span class="comment"># ========== 站点 ========== #</span></div><div class="line"><span class="comment"># 网站的title，每篇文章后面也会加上此字段利于SEO</span></div><div class="line"><span class="attr">SEO_title:</span></div><div class="line"><span class="comment"># 显示在网站banner上的主标题</span></div><div class="line"><span class="attr">main_title:</span> </div><div class="line"><span class="comment"># 显示在网站banner上的副标题</span></div><div class="line"><span class="attr">subtitle:</span></div><div class="line"><span class="comment"># 主页banner的背景图片</span></div><div class="line"><span class="attr">header_image:</span></div><div class="line"><span class="comment"># 文章页的默认背景图片</span></div><div class="line"><span class="attr">post_header_image:</span></div><div class="line"><span class="comment"># 404页的背景图片</span></div><div class="line"><span class="attr">_404_image:</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># ========== 评论插件 ========== #</span></div><div class="line"><span class="comment"># 目前只支持一键添加livere评论（因为懒），其他评论插件可自行添加在post.ejs模板中的&lt;/main&gt;标签前。</span></div><div class="line"><span class="attr">comment:</span></div><div class="line">  <span class="comment"># 将你的livere的uid填入以下字段</span></div><div class="line"><span class="attr">  livere:</span></div><div class="line"></div><div class="line"><span class="comment"># ========== 统计 ========== #</span></div><div class="line"><span class="comment"># 是否开启不蒜子统计</span></div><div class="line"><span class="attr">busuanzi:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># 百度统计(填写siteID)</span></div><div class="line"><span class="attr">baidu_analytics:</span></div><div class="line"><span class="comment"># Google统计(填写siteID)</span></div><div class="line"><span class="attr">google_analytics:</span></div><div class="line"><span class="comment"># CNZZ统计</span></div><div class="line"><span class="attr">CNZZ_analytics:</span></div><div class="line"></div><div class="line"><span class="comment"># ========== 其他 ========== #</span></div><div class="line"><span class="comment"># favicon</span></div><div class="line"><span class="attr">favicon:</span></div><div class="line"><span class="comment"># 首页的文章摘要字数(默认300)</span></div><div class="line"><span class="attr">truncate_length:</span></div></pre></td></tr></table></figure>
-<h3 id="文章页banner图片配置"><a href="#文章页banner图片配置" class="headerlink" title="文章页banner图片配置"></a>文章页banner图片配置</h3><p>通过配置每篇文章的头部的<code>header_image</code>字段来修改，如果不填写将采用主题配置中的<code>post_header_image</code>字段，如果<code>post_header_image</code>字段未填写则采用<code>site_header_image</code>字段。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attr">header_image:</span> <span class="string">/intro/post-bg.jpg</span></div></pre></td></tr></table></figure>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>MIT</p>
+<p>安装及使用方法见GitHub地址: <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank" rel="external">戳我:)</a></p>
+<h2 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h2><p>如果有任何使用上的问题或者疑问，欢迎留言</p>
+<p>感谢使用😆</p>
 
     </article>
     <!-- 前后页  -->
     <ul class="post-pager">
+        
+            <li class="next">
+                <a href= "/archer-demo/2017-10-08/页面生命周期：DOMContentLoaded, load, beforeunload, unload/" title= 页面生命周期：DOMContentLoaded, load, beforeunload, unload >
+                    <span>Next Post</span>
+                    <span>页面生命周期：DOMContentLoaded, load, beforeunload, unload</span>
+                </a>
+            </li>
         
         
             <li class="previous">
@@ -279,7 +265,7 @@
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-theme-archer"><span class="toc-number">1.</span> <span class="toc-text">hexo-theme-archer</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#说明"><span class="toc-number">1.1.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启用"><span class="toc-number">1.3.</span> <span class="toc-text">启用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#404页启用"><span class="toc-number">1.3.1.</span> <span class="toc-text">404页启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sidebar启用"><span class="toc-number">1.3.2.</span> <span class="toc-text">sidebar启用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">1.4.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#文章页banner图片配置"><span class="toc-number">1.4.1.</span> <span class="toc-text">文章页banner图片配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#License"><span class="toc-number">1.5.</span> <span class="toc-text">License</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-theme-archer"><span class="toc-number">1.</span> <span class="toc-text">hexo-theme-archer</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#帮助"><span class="toc-number">1.1.</span> <span class="toc-text">帮助</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top">&#xe639;</div>
@@ -487,7 +473,132 @@
     
     
     
-    <div class="total-archive"> Total : 16 </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 23 </div>
     
     <div class="post-archive">
     
@@ -496,6 +607,11 @@
     
     <div class="archive-year"> 2017 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/08</span><a class="archive-post-title" href= "/archer-demo/2017-10-08/页面生命周期：DOMContentLoaded, load, beforeunload, unload/" >页面生命周期：DOMContentLoaded, load, beforeunload, unload</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -518,7 +634,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/29</span><a class="archive-post-title" href= "/archer-demo/2013-12-29/日本語テスト/" >日本語テスト</a>
+            <span class="archive-post-date">12/28</span><a class="archive-post-title" href= "/archer-demo/2013-12-28/日本語テスト/" >日本語テスト</a>
         </li>
     
     
@@ -533,7 +649,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/excerpts/" >Excerpts</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/no-title的副本/" >[Untitled Post]</a>
         </li>
     
     
@@ -548,12 +664,22 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/gallery-post/" >Gallery Post</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins的副本/" >Tag Plugins</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/excerpts/" >Excerpts</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/videos的副本/" >Videos</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/gallery-post/" >Gallery Post</a>
         </li>
     
     
@@ -563,7 +689,17 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/elements/" >Elements</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/tags的副本/" >Tags</a>
         </li>
     
     
@@ -573,7 +709,17 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/elements/" >Elements</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/long-title的副本/" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post的副本/" >Link Post</a>
         </li>
     
     
@@ -606,6 +752,12 @@
         <span class="sidebar-tag-name"><a href= "#">中文</a></span>
     
         <span class="sidebar-tag-name"><a href= "#">日本語</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">Javascript</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">浏览器</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">语言测试</a></span>
     
     </div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
