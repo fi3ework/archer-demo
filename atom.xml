@@ -5,9 +5,9 @@
   <subtitle>it&#39;s better to burn out than to fade away</subtitle>
   <link href="/archer-demo/atom.xml" rel="self"/>
   
-  <link href="http://fi3ework.github.io/"/>
+  <link href="http://fi3ework.github.io/archer-demo/"/>
   <updated>2017-09-12T11:30:02.000Z</updated>
-  <id>http://fi3ework.github.io/</id>
+  <id>http://fi3ework.github.io/archer-demo/</id>
   
   <author>
     <name>Wee</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>hexo-theme-archer</title>
-    <link href="http://fi3ework.github.io/2017-08-14/hexo-theme-archer/"/>
-    <id>http://fi3ework.github.io/2017-08-14/hexo-theme-archer/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2017-08-14/hexo-theme-archer/"/>
+    <id>http://fi3ework.github.io/archer-demo/2017-08-14/hexo-theme-archer/</id>
     <published>2017-08-13T16:02:12.000Z</published>
     <updated>2017-09-12T11:30:02.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="hexo-theme-archer"><a href="#hexo-theme-archer" class="headerlink" title="hexo-theme-archer"></a>hexo-theme-archer</h1><p><img src="/2017-08-14/hexo-theme-archer/snap.png" alt="preview"></p><p>安装及使用方法见GitHub地址: <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank" rel="external">戳我:)</a></p><h2 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h2><p>如果有任何使用上的问题或者疑问，欢迎留言</p><p>感谢使用😆</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="hexo-theme-archer"><a href="#hexo-theme-archer" class="headerlink" title="hexo-theme-archer"></a>hexo-theme-archer</h1><p><img src="/archer-demo/2017-08-14/hexo-theme-archer/snap.png" alt="preview"></p><p>安装及使用方法见GitHub地址: <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank" rel="external">戳我:)</a></p><h2 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h2><p>如果有任何使用上的问题或者疑问，欢迎留言</p><p>感谢使用😆</p>]]></content>
     
     <summary type="html">
     
@@ -35,16 +35,16 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://fi3ework.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://fi3ework.github.io/archer-demo/tags/hexo/"/>
     
-      <category term="hexo-theme-archer" scheme="http://fi3ework.github.io/tags/hexo-theme-archer/"/>
+      <category term="hexo-theme-archer" scheme="http://fi3ework.github.io/archer-demo/tags/hexo-theme-archer/"/>
     
   </entry>
   
   <entry>
     <title>中文測試</title>
-    <link href="http://fi3ework.github.io/2013-12-30/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/"/>
-    <id>http://fi3ework.github.io/2013-12-30/中文測試/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-30/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-30/中文測試/</id>
     <published>2013-12-30T15:31:30.000Z</published>
     <updated>2017-08-17T13:28:37.000Z</updated>
     
@@ -62,16 +62,16 @@
     </summary>
     
     
-      <category term="语言测试" scheme="http://fi3ework.github.io/tags/%E8%AF%AD%E8%A8%80%E6%B5%8B%E8%AF%95/"/>
+      <category term="语言测试" scheme="http://fi3ework.github.io/archer-demo/tags/%E8%AF%AD%E8%A8%80%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="中文" scheme="http://fi3ework.github.io/tags/%E4%B8%AD%E6%96%87/"/>
+      <category term="中文" scheme="http://fi3ework.github.io/archer-demo/tags/%E4%B8%AD%E6%96%87/"/>
     
   </entry>
   
   <entry>
     <title>日本語テスト</title>
-    <link href="http://fi3ework.github.io/2013-12-28/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/"/>
-    <id>http://fi3ework.github.io/2013-12-28/日本語テスト/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-28/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-28/日本語テスト/</id>
     <published>2013-12-28T15:33:26.000Z</published>
     <updated>2017-08-13T12:53:42.000Z</updated>
     
@@ -90,28 +90,28 @@
     </summary>
     
     
-      <category term="语言测试" scheme="http://fi3ework.github.io/tags/%E8%AF%AD%E8%A8%80%E6%B5%8B%E8%AF%95/"/>
+      <category term="语言测试" scheme="http://fi3ework.github.io/archer-demo/tags/%E8%AF%AD%E8%A8%80%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="日本語" scheme="http://fi3ework.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
+      <category term="日本語" scheme="http://fi3ework.github.io/archer-demo/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/"/>
     
   </entry>
   
   <entry>
     <title>Images</title>
-    <link href="http://fi3ework.github.io/2013-12-26/images/"/>
-    <id>http://fi3ework.github.io/2013-12-26/images/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-26/images/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-26/images/</id>
     <published>2013-12-26T14:46:49.000Z</published>
     <updated>2017-08-08T16:48:30.000Z</updated>
     
-    <content type="html"><![CDATA[<p>This is a image test post.</p><p><img src="/2013-12-26/images/assets/wallpaper-2572384.jpg" alt=""></p><p><img src="/2013-12-26/images/assets/wallpaper-2311325.jpg" alt="Caption"></p><p><img src="/2013-12-26/images/assets/wallpaper-878514.jpg" alt=""></p><p><img src="http://placehold.it/350x150.jpg" alt="Small Picture"></p>]]></content>
+    <content type="html"><![CDATA[<p>This is a image test post.</p><p><img src="/archer-demo/2013-12-26/images/assets/wallpaper-2572384.jpg" alt=""></p><p><img src="/archer-demo/2013-12-26/images/assets/wallpaper-2311325.jpg" alt="Caption"></p><p><img src="/archer-demo/2013-12-26/images/assets/wallpaper-878514.jpg" alt=""></p><p><img src="http://placehold.it/350x150.jpg" alt="Small Picture"></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;This is a image test post.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2013-12-26/images/assets/wallpaper-2572384.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2013-12-26/images/
+&lt;p&gt;&lt;img src=&quot;/archer-demo/2013-12-26/images/assets/wallpaper-2572384.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/archer
       
     
     </summary>
@@ -121,8 +121,8 @@
   
   <entry>
     <title></title>
-    <link href="http://fi3ework.github.io/2013-12-25/no-title/"/>
-    <id>http://fi3ework.github.io/2013-12-25/no-title/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-25/no-title/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-25/no-title/</id>
     <published>2013-12-25T14:57:49.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -143,8 +143,8 @@
   
   <entry>
     <title></title>
-    <link href="http://fi3ework.github.io/2013-12-25/no-title%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
-    <id>http://fi3ework.github.io/2013-12-25/no-title的副本/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-25/no-title%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-25/no-title的副本/</id>
     <published>2013-12-25T14:57:49.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -165,8 +165,8 @@
   
   <entry>
     <title>Excerpts</title>
-    <link href="http://fi3ework.github.io/2013-12-25/excerpts/"/>
-    <id>http://fi3ework.github.io/2013-12-25/excerpts/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-25/excerpts/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-25/excerpts/</id>
     <published>2013-12-24T16:23:23.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -183,8 +183,8 @@
   
   <entry>
     <title>Videos</title>
-    <link href="http://fi3ework.github.io/2013-12-25/videos%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
-    <id>http://fi3ework.github.io/2013-12-25/videos的副本/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-25/videos%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-25/videos的副本/</id>
     <published>2013-12-24T16:19:15.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -206,8 +206,8 @@
   
   <entry>
     <title>Videos</title>
-    <link href="http://fi3ework.github.io/2013-12-25/videos/"/>
-    <id>http://fi3ework.github.io/2013-12-25/videos/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-25/videos/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-25/videos/</id>
     <published>2013-12-24T16:19:15.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -229,8 +229,8 @@
   
   <entry>
     <title>Gallery Post</title>
-    <link href="http://fi3ework.github.io/2013-12-25/gallery-post/"/>
-    <id>http://fi3ework.github.io/2013-12-25/gallery-post/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-25/gallery-post/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-25/gallery-post/</id>
     <published>2013-12-24T16:16:18.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -255,8 +255,8 @@
   
   <entry>
     <title>Tag Plugins</title>
-    <link href="http://fi3ework.github.io/2013-12-25/tag-plugins%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
-    <id>http://fi3ework.github.io/2013-12-25/tag-plugins的副本/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-25/tag-plugins/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-25/tag-plugins/</id>
     <published>2013-12-24T16:14:39.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -276,8 +276,8 @@
   
   <entry>
     <title>Tag Plugins</title>
-    <link href="http://fi3ework.github.io/2013-12-25/tag-plugins/"/>
-    <id>http://fi3ework.github.io/2013-12-25/tag-plugins/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-25/tag-plugins%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-25/tag-plugins的副本/</id>
     <published>2013-12-24T16:14:39.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -297,8 +297,8 @@
   
   <entry>
     <title>www.google.com</title>
-    <link href="http://fi3ework.github.io/2013-12-24/link-post-without-title/"/>
-    <id>http://fi3ework.github.io/2013-12-24/link-post-without-title/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-24/link-post-without-title/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-24/link-post-without-title/</id>
     <published>2013-12-24T15:44:13.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -318,8 +318,8 @@
   
   <entry>
     <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</title>
-    <link href="http://fi3ework.github.io/2013-12-24/long-title%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
-    <id>http://fi3ework.github.io/2013-12-24/long-title的副本/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-24/long-title%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-24/long-title的副本/</id>
     <published>2013-12-24T15:31:06.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -340,8 +340,8 @@
   
   <entry>
     <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</title>
-    <link href="http://fi3ework.github.io/2013-12-24/long-title/"/>
-    <id>http://fi3ework.github.io/2013-12-24/long-title/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-24/long-title/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-24/long-title/</id>
     <published>2013-12-24T15:31:06.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -362,8 +362,8 @@
   
   <entry>
     <title>Categories</title>
-    <link href="http://fi3ework.github.io/2013-12-24/categories/"/>
-    <id>http://fi3ework.github.io/2013-12-24/categories/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-24/categories/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-24/categories/</id>
     <published>2013-12-24T15:30:09.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -379,19 +379,19 @@
     
     </summary>
     
-      <category term="Foo" scheme="http://fi3ework.github.io/categories/Foo/"/>
+      <category term="Foo" scheme="http://fi3ework.github.io/archer-demo/categories/Foo/"/>
     
-      <category term="Bar" scheme="http://fi3ework.github.io/categories/Foo/Bar/"/>
+      <category term="Bar" scheme="http://fi3ework.github.io/archer-demo/categories/Foo/Bar/"/>
     
-      <category term="Baz" scheme="http://fi3ework.github.io/categories/Foo/Bar/Baz/"/>
+      <category term="Baz" scheme="http://fi3ework.github.io/archer-demo/categories/Foo/Bar/Baz/"/>
     
     
   </entry>
   
   <entry>
     <title>Link Post</title>
-    <link href="http://fi3ework.github.io/2013-12-24/link-post/"/>
-    <id>http://fi3ework.github.io/2013-12-24/link-post/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-24/link-post/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-24/link-post/</id>
     <published>2013-12-24T15:30:04.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -411,8 +411,8 @@
   
   <entry>
     <title>Link Post</title>
-    <link href="http://fi3ework.github.io/2013-12-24/link-post%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
-    <id>http://fi3ework.github.io/2013-12-24/link-post的副本/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-24/link-post%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-24/link-post的副本/</id>
     <published>2013-12-24T15:30:04.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -432,8 +432,8 @@
   
   <entry>
     <title>Tags</title>
-    <link href="http://fi3ework.github.io/2013-12-24/tags/"/>
-    <id>http://fi3ework.github.io/2013-12-24/tags/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-24/tags/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-24/tags/</id>
     <published>2013-12-24T15:29:53.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -450,18 +450,18 @@
     </summary>
     
     
-      <category term="Foo" scheme="http://fi3ework.github.io/tags/Foo/"/>
+      <category term="Foo" scheme="http://fi3ework.github.io/archer-demo/tags/Foo/"/>
     
-      <category term="Bar" scheme="http://fi3ework.github.io/tags/Bar/"/>
+      <category term="Bar" scheme="http://fi3ework.github.io/archer-demo/tags/Bar/"/>
     
-      <category term="Baz" scheme="http://fi3ework.github.io/tags/Baz/"/>
+      <category term="Baz" scheme="http://fi3ework.github.io/archer-demo/tags/Baz/"/>
     
   </entry>
   
   <entry>
     <title>Tags</title>
-    <link href="http://fi3ework.github.io/2013-12-24/tags%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
-    <id>http://fi3ework.github.io/2013-12-24/tags的副本/</id>
+    <link href="http://fi3ework.github.io/archer-demo/2013-12-24/tags%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
+    <id>http://fi3ework.github.io/archer-demo/2013-12-24/tags的副本/</id>
     <published>2013-12-24T15:29:53.000Z</published>
     <updated>2016-03-06T16:01:32.000Z</updated>
     
@@ -478,11 +478,11 @@
     </summary>
     
     
-      <category term="Foo" scheme="http://fi3ework.github.io/tags/Foo/"/>
+      <category term="Foo" scheme="http://fi3ework.github.io/archer-demo/tags/Foo/"/>
     
-      <category term="Bar" scheme="http://fi3ework.github.io/tags/Bar/"/>
+      <category term="Bar" scheme="http://fi3ework.github.io/archer-demo/tags/Bar/"/>
     
-      <category term="Baz" scheme="http://fi3ework.github.io/tags/Baz/"/>
+      <category term="Baz" scheme="http://fi3ework.github.io/archer-demo/tags/Baz/"/>
     
   </entry>
   
