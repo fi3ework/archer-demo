@@ -6,7 +6,7 @@
   <link href="/archer-demo/atom.xml" rel="self"/>
   
   <link href="http://fi3ework.github.io/archer-demo/"/>
-  <updated>2017-12-01T06:27:49.505Z</updated>
+  <updated>2017-09-12T11:30:02.000Z</updated>
   <id>http://fi3ework.github.io/archer-demo/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>xxxx</title>
-    <link href="http://fi3ework.github.io/archer-demo/2017-12-01/xxxx/"/>
-    <id>http://fi3ework.github.io/archer-demo/2017-12-01/xxxx/</id>
-    <published>2017-12-01T06:27:49.000Z</published>
-    <updated>2017-12-01T06:27:49.505Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>hexo-theme-archer</title>
