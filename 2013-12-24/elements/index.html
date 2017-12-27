@@ -24,7 +24,7 @@
             width: 100%;
             height: 50vh;
             overflow: hidden;
-            box-shadow: -0.1rem 0 0.5rem 0 rgba(0, 0, 0, 0.8);
+            box-shadow: -0.1rem 0 0.5rem 0 rgba(0, 0, 0, 0.5);
         }
         .site-intro-placeholder {
             position: absolute;
@@ -47,7 +47,7 @@
         }
     }
 </style>
-    <link rel="stylesheet" href = /archer-demo/css/style.css?v=20171218 />
+    <link rel="stylesheet" href = /archer-demo/css/style.css?v=20171227 />
     <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" defer></script>
     
     <script src="/archer-demo/scripts/main.js" defer></script>
@@ -57,7 +57,7 @@
         var _hmt = _hmt || [];
         (function () {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?c2e692c5407f95609121a9d80bd24510";
+        hm.src = "https://hm.baidu.com/hm.js?https://hm.baidu.com/hm.js?c2e692c5407f95609121a9d80bd24510";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
         })();
@@ -66,6 +66,7 @@
     <!-- 谷歌统计  -->
     
 </head>
+
     
         <body class="post-body">
     
@@ -118,9 +119,22 @@
         
             <!-- 文章页标签  -->
             
+            <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
                 <span class="post-intro-time">2013/12/24</span>
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe604;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">
+                        &#xe601;
+                    </span>
+                    <span class="bdsharebuttonbox">
+                        <a href="#" class="bds_more shareText" data-cmd="more">Share</a>
+                    </span>
+                </span>
             </div>
         
     </div>
@@ -287,6 +301,7 @@
 
 
     
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -325,7 +340,7 @@
     <!-- 不蒜子  -->
     
     <div class="busuanzi-container">
-        <span id="busuanzi_container_site_pv">Welcome, No. <span id="busuanzi_value_site_pv"></span> visitor.
+        <span id="busuanzi_container_site_pv">VISITOR VOLUME: <span id="busuanzi_value_site_pv"></span>
         </span>
     </div>
     
@@ -351,6 +366,8 @@
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-archive">
     <!-- 在ejs中将archive按照时间排序 -->
+    
+    
     
     
     
@@ -659,9 +676,9 @@
     
         <span class="sidebar-tag-name"><a href= "#">语言测试</a></span>
     
-        <span class="sidebar-tag-name"><a href= "#">中文</a></span>
-    
         <span class="sidebar-tag-name"><a href= "#">日本語</a></span>
+    
+        <span class="sidebar-tag-name"><a href= "#">中文</a></span>
     
     </div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
