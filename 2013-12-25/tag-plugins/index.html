@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <!-- title -->
+
+
+
+
+
+<head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-    <title>
-        
-        Tag Plugins · fi3ework&#39;s Studio
-        
-    </title>
-    <link rel="icon" href= /assets/favicon.ico>
-    <!-- TODO: 在font-face加载完毕后改变字体  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
-    <!-- 提前加载place holder  -->
+    <title>Tag Plugins · fi3ework&#39;s Studio</title>
     <style type="text/css">
-        @font-face {
-            font-family: 'Oswald-Regular';
-            src: url(/archer-demo/font/Oswald-Regular.ttf);
-        }
-    </style>
-    <style type="text/css">
-        .site-intro {
-            position: relative;
-            width: 100%;
-            height: 50vh;
-            overflow: hidden;
-            box-shadow: -0.1rem 0 0.5rem 0 rgba(0, 0, 0, 0.5);
-        }
-        .site-intro-placeholder {
-            position: absolute;
-            z-index: -2;
-            top: 0;
-            left: 0px;
-            width: calc(100% + 300px);
-            height: 100%;
-            background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
-            background-position: center center;
-            transform: translate3d(-226px, 0, 0);
-            animation: gradient-move 2.5s ease-out 0s 1;
-        }
-        @keyframes gradient-move {
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/archer-demo/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        box-shadow: -0.1rem 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
         0% {
             transform: translate3d(-226px, 0, 0);
         }
@@ -46,22 +59,192 @@
             transform: translate3d(0, 0, 0);
         }
     }
+
 </style>
-    <link rel="stylesheet" href = /archer-demo/css/style.css?v=20171227 />
+
+    <link rel="preload" href= /archer-demo/css/style.css?v=20180203 as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" type="text/css" href= /archer-demo/css/mobile.css?v=20180203 media="(max-width: 980px)"/>
+    <link rel="icon" href= /assets/favicon.ico>
+    <script>
+  // load webfont-loader async, and add callback function
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  async("https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", asyncCb)
+</script>
+    <script>
+        (function (w) {
+            "use strict";
+            // rel=preload support test
+            if (!w.loadCSS) {
+                w.loadCSS = function () { };
+            }
+            // define on the loadCSS obj
+            var rp = loadCSS.relpreload = {};
+            // rel=preload feature support test
+            // runs once and returns a function for compat purposes
+            rp.support = (function () {
+                var ret;
+                try {
+                    ret = w.document.createElement("link").relList.supports("preload");
+                } catch (e) {
+                    ret = false;
+                }
+                return function () {
+                    return ret;
+                };
+            })();
+
+            // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+            // then change that media back to its intended value on load
+            rp.bindMediaToggle = function (link) {
+                // remember existing media attr for ultimate state, or default to 'all'
+                var finalMedia = link.media || "all";
+
+                function enableStylesheet() {
+                    link.media = finalMedia;
+                }
+
+                // bind load handlers to enable media
+                if (link.addEventListener) {
+                    link.addEventListener("load", enableStylesheet);
+                } else if (link.attachEvent) {
+                    link.attachEvent("onload", enableStylesheet);
+                }
+
+                // Set rel and non-applicable media type to start an async request
+                // note: timeout allows this to happen async to let rendering continue in IE
+                setTimeout(function () {
+                    link.rel = "stylesheet";
+                    link.media = "only x";
+                });
+                // also enable media after 3 seconds,
+                // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+                setTimeout(enableStylesheet, 3000);
+            };
+
+            // loop through link elements in DOM
+            rp.poly = function () {
+                // double check this to prevent external calls from running
+                if (rp.support()) {
+                    return;
+                }
+                var links = w.document.getElementsByTagName("link");
+                for (var i = 0; i < links.length; i++) {
+                    var link = links[i];
+                    // qualify links to those with rel=preload and as=style attrs
+                    if (link.rel === "preload" && link.getAttribute("as") === "style" && !link.getAttribute("data-loadcss")) {
+                        // prevent rerunning on link
+                        link.setAttribute("data-loadcss", true);
+                        // bind listeners to toggle media back
+                        rp.bindMediaToggle(link);
+                    }
+                }
+            };
+
+            // if unsupported, run the polyfill
+            if (!rp.support()) {
+                // run once at least
+                rp.poly();
+
+                // rerun poly on an interval until onload
+                var run = w.setInterval(rp.poly, 500);
+                if (w.addEventListener) {
+                    w.addEventListener("load", function () {
+                        rp.poly();
+                        w.clearInterval(run);
+                    });
+                } else if (w.attachEvent) {
+                    w.attachEvent("onload", function () {
+                        rp.poly();
+                        w.clearInterval(run);
+                    });
+                }
+            }
+            // commonjs
+            if (typeof exports !== "undefined") {
+                exports.loadCSS = loadCSS;
+            }
+            else {
+                w.loadCSS = loadCSS;
+            }
+        }(typeof global !== "undefined" ? global : this));
+    </script>
     <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" defer></script>
     
     <script src="/archer-demo/scripts/main.js" defer></script>
     <!-- 百度统计  -->
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?https://hm.baidu.com/hm.js?c2e692c5407f95609121a9d80bd24510";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
     
     <!-- 谷歌统计  -->
     
@@ -140,86 +323,25 @@
     </div>
 </div>
         <img class="loading" src="/archer-demo/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
-        <script>
-            var browser = {
-                    versions: function () {
-                        var u = window.navigator.userAgent;
-                        return {
-                            userAgent: u,
-                            trident: u.indexOf('Trident') > -1, //IE内核
-                            presto: u.indexOf('Presto') > -1, //opera内核
-                            webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-                            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-                            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
-                            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-                            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-                            iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
-                            iPad: u.indexOf('iPad') > -1, //是否为iPad
-                            webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
-                            weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
-                            uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
-                        };
-                    }()
-                }
 
-            function fontLoaded(){
-                console.log('font loaded');
-                if (document.getElementsByClassName('site-intro-meta')) {
-                    document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
-                    document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
-                    var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
-                        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
-                        if (postIntroTags) {
-                            postIntroTags.classList.add('post-fade-in');
-                        }
-                        if (postIntroMeat) {
-                            postIntroMeat.classList.add('post-fade-in');
-                        }
-                    }
-                }
-                
-            console.log("userAgent:" + browser.versions.userAgent);
-            // UC不支持跨域，所以直接显示
-            if (browser.versions.uc) {
-                console.log("UCBrowser");
-                fontLoaded();
-            } else {
-                WebFont.load({
-                    custom: {
-                        families: ['Oswald-Regular']
-                    },
-                    loading: function () {  //所有字体开始加载
-                        // console.log('loading');
-                    },
-                    active: function () {  //所有字体已渲染
-                        fontLoaded();
-                    },
-                    inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
-                        console.log('inactive: timeout');
-                        fontLoaded();
-                    },
-                    timeout: 7000 // Set the timeout to two seconds
-                });
-            }
-        </script>
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="external">docs</a> for more info.</p>
+        <p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank" rel="noopener">docs</a> for more info.</p>
 <h2 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h2><h3 id="Normal-blockquote"><a href="#Normal-blockquote" class="headerlink" title="Normal blockquote"></a>Normal blockquote</h3><blockquote>
 <p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p>
 </blockquote>
 <h3 id="Quote-from-a-book"><a href="#Quote-from-a-book" class="headerlink" title="Quote from a book"></a>Quote from a book</h3><blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
 <footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
-<h3 id="Quote-from-Twitter"><a href="#Quote-from-Twitter" class="headerlink" title="Quote from Twitter"></a>Quote from Twitter</h3><blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="external">http://devdocs.io</a></p>
-<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="external">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+<h3 id="Quote-from-Twitter"><a href="#Quote-from-Twitter" class="headerlink" title="Quote from Twitter"></a>Quote from Twitter</h3><blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank" rel="noopener">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank" rel="noopener">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
 <h3 id="Quote-from-an-article-on-the-web"><a href="#Quote-from-an-article-on-the-web" class="headerlink" title="Quote from an article on the web"></a>Quote from an article on the web</h3><blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
-<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="external">Welcome to Island Marketing</a></cite></footer></blockquote>
-<h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><h3 id="Normal-code-block"><a href="#Normal-code-block" class="headerlink" title="Normal code block"></a>Normal code block</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure>
-<h3 id="With-caption"><a href="#With-caption" class="headerlink" title="With caption"></a>With caption</h3><figure class="highlight plain"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.map(callback[, thisArg])</div></pre></td></tr></table></figure>
-<h3 id="With-caption-and-URL"><a href="#With-caption-and-URL" class="headerlink" title="With caption and URL"></a>With caption and URL</h3><figure class="highlight plain"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.compact([0, 1, false, 2, ‘’, 3]);</div><div class="line">=&gt; [1, 2, 3]</div></pre></td></tr></table></figure>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank" rel="noopener">Welcome to Island Marketing</a></cite></footer></blockquote>
+<h2 id="Code-Block"><a href="#Code-Block" class="headerlink" title="Code Block"></a>Code Block</h2><h3 id="Normal-code-block"><a href="#Normal-code-block" class="headerlink" title="Normal code block"></a>Normal code block</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">alert</span>(<span class="string">'Hello World!'</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="With-caption"><a href="#With-caption" class="headerlink" title="With caption"></a>With caption</h3><figure class="highlight cpp"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">array</span>.<span class="built_in">map</span>(callback[, thisArg])</span><br></pre></td></tr></table></figure>
+<h3 id="With-caption-and-URL"><a href="#With-caption-and-URL" class="headerlink" title="With caption and URL"></a>With caption and URL</h3><figure class="highlight excel"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="noopener">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">false</span>, <span class="number">2</span>, ‘’, <span class="number">3</span>]);</span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
 <h3 id="With-marked-lines"><a href="#With-marked-lines" class="headerlink" title="With marked lines"></a>With marked lines</h3><p>Line 1,7-8,10 should be marked with different color.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line marked"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line"></div><div class="line"><span class="keyword">const</span> hostname = <span class="string">'127.0.0.1'</span>;</div><div class="line"><span class="keyword">const</span> port = <span class="number">1337</span>;</div><div class="line"></div><div class="line">http.createServer(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</div><div class="line marked">  res.writeHead(<span class="number">200</span>, &#123; <span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span> &#125;);</div><div class="line marked">  res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">&#125;).listen(port, hostname, () =&gt; &#123;</div><div class="line marked">  <span class="built_in">console</span>.log(<span class="string">`Server running at http://<span class="subst">$&#123;hostname&#125;</span>:<span class="subst">$&#123;port&#125;</span>/`</span>);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line marked"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> hostname = <span class="string">'127.0.0.1'</span>;</span><br><span class="line"><span class="keyword">const</span> port = <span class="number">1337</span>;</span><br><span class="line"></span><br><span class="line">http.createServer(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line marked">  res.writeHead(<span class="number">200</span>, &#123; <span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span> &#125;);</span><br><span class="line marked">  res.end(<span class="string">'Hello World\n'</span>);</span><br><span class="line">&#125;).listen(port, hostname, () =&gt; &#123;</span><br><span class="line marked">  <span class="built_in">console</span>.log(<span class="string">`Server running at http://<span class="subst">$&#123;hostname&#125;</span>:<span class="subst">$&#123;port&#125;</span>/`</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>Note: Theme’s style should support <code>.highlight.line.marked</code> (recommend to use the selection or current line color).</p>
 <h3 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h3><script src="//gist.github.com/996818.js"></script>
 <h3 id="jsFiddle"><a href="#jsFiddle" class="headerlink" title="jsFiddle"></a>jsFiddle</h3><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
@@ -232,41 +354,26 @@
 
     </article>
     <!-- 前后页  -->
-    <ul class="post-pager">
-        
-            <li class="next">
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
                 <a href= "/archer-demo/2013-12-25/gallery-post/" title= Gallery Post >
-                    <span>Next Post</span>
-                    <span>Gallery Post</span>
+                    <div class="nextTitle">Gallery Post</div>
                 </a>
-            </li>
-        
-        
-            <li class="previous">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
                 <a href= "/archer-demo/2013-12-24/link-post-without-title/" title= www.google.com >
-                    <span>Previous Post</span>
-                    <span>www.google.com</span>
+                    <div class="prevTitle">www.google.com</div>
                 </a>
-            </li>
-        
+            
+        </li>
     </ul>
     <!-- 评论插件 -->
     <!-- 来必力City版安装代码 -->
-
-    <div id="lv-container" data-id="city" data-uid= MTAyMC8yODQyOS81MDAw>
-        <script type="text/javascript">
-            (function (d, s) {
-                var j, e = d.getElementsByTagName(s)[0];
-                if (typeof LivereTower === 'function') { return; }
-                j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                j.async = true;
-
-                e.parentNode.insertBefore(j, e);
-            })(document, 'script');
-        </script>
-        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-    </div>
 
 <!-- City版安装代码已完成 -->
     
@@ -290,13 +397,67 @@
     
         
             
-                <a href="mailto:805843200@qq.com" class="iconfont-archer email" title=email ></a>
+                <a href="mailto:12345@qq.com" class="iconfont-archer email" title=email ></a>
             
         
     
         
             
                 <a href="//github.com/fi3ework" class="iconfont-archer github" target="_blank" title="github"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer weibo" target="_blank" title="weibo"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer zhihu" target="_blank" title="zhihu"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer douban" target="_blank" title="douban"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer facebook" target="_blank" title="facebook"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer twitter" target="_blank" title="twitter"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer instagram" target="_blank" title="instagram"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer stack-overflow" target="_blank" title="stack-overflow"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer linkedin" target="_blank" title="linkedin"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer others" target="_blank" title="others"></a>
             
         
     
@@ -311,12 +472,12 @@
     
     <!-- powered by Hexo  -->
     <div class="copyright">
-        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">Theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">archer</a></span>
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
     </div>
     <!-- 不蒜子  -->
     
     <div class="busuanzi-container">
-        <span id="busuanzi_container_site_pv">VISITOR VOLUME: <span id="busuanzi_value_site_pv"></span>
+        <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span>
         </span>
     </div>
     
@@ -331,17 +492,38 @@
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Block-Quote"><span class="toc-number">1.</span> <span class="toc-text">Block Quote</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Normal-blockquote"><span class="toc-number">1.1.</span> <span class="toc-text">Normal blockquote</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quote-from-a-book"><span class="toc-number">1.2.</span> <span class="toc-text">Quote from a book</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quote-from-Twitter"><span class="toc-number">1.3.</span> <span class="toc-text">Quote from Twitter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quote-from-an-article-on-the-web"><span class="toc-number">1.4.</span> <span class="toc-text">Quote from an article on the web</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-Block"><span class="toc-number">2.</span> <span class="toc-text">Code Block</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Normal-code-block"><span class="toc-number">2.1.</span> <span class="toc-text">Normal code block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-caption"><span class="toc-number">2.2.</span> <span class="toc-text">With caption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-caption-and-URL"><span class="toc-number">2.3.</span> <span class="toc-text">With caption and URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#With-marked-lines"><span class="toc-number">2.4.</span> <span class="toc-text">With marked lines</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gist"><span class="toc-number">2.5.</span> <span class="toc-text">Gist</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jsFiddle"><span class="toc-number">2.6.</span> <span class="toc-text">jsFiddle</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pullquote"><span class="toc-number">3.</span> <span class="toc-text">Pullquote</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Left"><span class="toc-number">3.1.</span> <span class="toc-text">Left</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Right"><span class="toc-number">3.2.</span> <span class="toc-text">Right</span></a></li></ol></li></ol>
     </div>
     
-    <div class="back-top">&#xe639;</div>
-    <div class="sidebar">
-    <div class="sidebar-header sidebar-header-show-archive">
-        <div class="sidebar-category">
-            <span class="sidebar-archive-link"><span class="iconfont-archer">&#xe67d;</span>Archive</span>
-            <span class="sidebar-tags-link"><span class="iconfont-archer">&#xe610;</span>Tag</span>
-        </div>
-    </div>
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
     <div class="sidebar-content sidebar-content-show-archive">
-          <div class="sidebar-archive">
+          <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -548,22 +730,17 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/30</span><a class="archive-post-title" href= "/archer-demo/2013-12-30/中文測試/" >中文測試</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">12/28</span><a class="archive-post-title" href= "/archer-demo/2013-12-28/日本語テスト/" >日本語テスト</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">12/26</span><a class="archive-post-title" href= "/archer-demo/2013-12-26/images/" >Images</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/no-title/" >[Untitled Post]</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins/" >Tag Plugins</a>
         </li>
     
     
@@ -583,7 +760,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins/" >Tag Plugins</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/long-title/" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
         </li>
     
     
@@ -593,7 +770,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/categories/" >Categories</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/日本語テスト/" >日本語テスト</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/中文測試/" >中文測試</a>
         </li>
     
     
@@ -603,17 +785,17 @@
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/long-title/" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/categories/" >Categories</a>
         </li>
     
     
@@ -623,26 +805,27 @@
     
     </div>
   </div>
-        <div class="sidebar-tags">
+        <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name"><a href= "#">hexo</a></span>
+        <span class="sidebar-tag-name" data-tags="JavaScript"><span class="iconfont-archer">&#xe606;</span>JavaScript</span>
     
-        <span class="sidebar-tag-name"><a href= "#">hexo-theme-archer</a></span>
+        <span class="sidebar-tag-name" data-tags="Ajax"><span class="iconfont-archer">&#xe606;</span>Ajax</span>
     
-        <span class="sidebar-tag-name"><a href= "#">Foo</a></span>
+        <span class="sidebar-tag-name" data-tags="CSS"><span class="iconfont-archer">&#xe606;</span>CSS</span>
     
-        <span class="sidebar-tag-name"><a href= "#">Bar</a></span>
+        <span class="sidebar-tag-name" data-tags="Foo"><span class="iconfont-archer">&#xe606;</span>Foo</span>
     
-        <span class="sidebar-tag-name"><a href= "#">Baz</a></span>
+        <span class="sidebar-tag-name" data-tags="Bar"><span class="iconfont-archer">&#xe606;</span>Bar</span>
     
-        <span class="sidebar-tag-name"><a href= "#">语言测试</a></span>
+        <span class="sidebar-tag-name" data-tags="Baz"><span class="iconfont-archer">&#xe606;</span>Baz</span>
     
-        <span class="sidebar-tag-name"><a href= "#">日本語</a></span>
+        <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
-        <span class="sidebar-tag-name"><a href= "#">中文</a></span>
+        <span class="sidebar-tag-name" data-tags="hexo-theme-archer"><span class="iconfont-archer">&#xe606;</span>hexo-theme-archer</span>
     
     </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
     <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
     缺失模块。<br/>
     1、请确保node版本大于6.2<br/>
@@ -666,10 +849,25 @@ jsonContent:
     link: false
     permalink: false
     excerpt: false
-    categories: false
+    categories: true
     tags: true</pre>
     </div> 
-    <div class="sidebar-tag-list"></div>
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="技术"><span class="iconfont-archer">&#xe60a;</span>技术</span>
+    
+        <span class="sidebar-category-name" data-categories="Foo"><span class="iconfont-archer">&#xe60a;</span>Foo</span>
+    
+        <span class="sidebar-category-name" data-categories="Foo/Bar"><span class="iconfont-archer">&#xe60a;</span>Foo/Bar</span>
+    
+        <span class="sidebar-category-name" data-categories="Foo/Bar/Baz"><span class="iconfont-archer">&#xe60a;</span>Foo/Bar/Baz</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
 </div>
     </div>
 </div> 
