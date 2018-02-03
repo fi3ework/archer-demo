@@ -32,10 +32,11 @@
 
     .site-intro {
         position: relative;
+        z-index: 3;
         width: 100%;
         height: 50vh;
         overflow: hidden;
-        box-shadow: -0.1rem 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7);
     }
 
     .site-intro-placeholder {
@@ -246,6 +247,16 @@
     <script src="/archer-demo/scripts/main.js" defer></script>
     <!-- 百度统计  -->
     
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?https://hm.baidu.com/hm.js?c2e692c5407f95609121a9d80bd24510";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    
     <!-- 谷歌统计  -->
     
 </head>
@@ -279,7 +290,7 @@
     
     <!-- 404页  -->
             
-    <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/archer-demo/intro/post-bg.jpg)"></div>
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
@@ -375,6 +386,21 @@
     <!-- 评论插件 -->
     <!-- 来必力City版安装代码 -->
 
+    <div id="lv-container" data-id="city" data-uid= MTAyMC8yODQyOS81MDAw>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
 <!-- City版安装代码已完成 -->
     
     
@@ -397,7 +423,7 @@
     
         
             
-                <a href="mailto:12345@qq.com" class="iconfont-archer email" title=email ></a>
+                <a href="mailto:805843200@qq.com" class="iconfont-archer email" title=email ></a>
             
         
     
@@ -408,57 +434,21 @@
         
     
         
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer weibo" target="_blank" title="weibo"></a>
-            
+    
         
     
         
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer zhihu" target="_blank" title="zhihu"></a>
-            
+    
         
     
         
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer douban" target="_blank" title="douban"></a>
-            
+    
         
     
         
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer facebook" target="_blank" title="facebook"></a>
-            
-        
     
         
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer twitter" target="_blank" title="twitter"></a>
-            
-        
     
-        
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer instagram" target="_blank" title="instagram"></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer stack-overflow" target="_blank" title="stack-overflow"></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer linkedin" target="_blank" title="linkedin"></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/fi3ework" class="iconfont-archer others" target="_blank" title="others"></a>
-            
         
     
         
@@ -696,6 +686,16 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-archive"> Total : 16 </div>
     
     <div class="post-archive">
@@ -732,12 +732,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/excerpts/" >Excerpts</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins/" >Tag Plugins</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/gallery-post/" >Gallery Post</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/excerpts/" >Excerpts</a>
         </li>
     
     
@@ -747,7 +747,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/tag-plugins/" >Tag Plugins</a>
+            <span class="archive-post-date">12/25</span><a class="archive-post-title" href= "/archer-demo/2013-12-25/gallery-post/" >Gallery Post</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
         </li>
     
     
@@ -767,6 +772,11 @@
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/elements/" >Elements</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post-without-title/" >www.google.com</a>
         </li>
     
@@ -778,16 +788,6 @@
     
         <li class="archive-post-item">
             <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/categories/" >Categories</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/link-post/" >Link Post</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/archer-demo/2013-12-24/elements/" >Elements</a>
         </li>
     
     
