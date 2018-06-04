@@ -68,8 +68,8 @@
 
 </style>
 
-    <link rel="preload" href= /archer-demo/css/style.css?v=20180524 as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="stylesheet" href= /archer-demo/css/mobile.css?v=20180524 media="(max-width: 980px)">
+    <link rel="preload" href= /archer-demo/css/style.css?v=20180604 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /archer-demo/css/mobile.css?v=20180604 media="(max-width: 980px)">
     
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         
@@ -186,6 +186,20 @@
     <link rel="preload" href="/archer-demo/scripts/main.js" as="script" />
     <link rel="preload" as="font" href="/archer-demo/font/Oswald-Regular.ttf" crossorigin>
     <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    <!-- algolia -->
+    <script>
+        
+        var hits = JSON.parse('{"per_page":10}')
+        var labels = JSON.parse('{"input_placeholder":"Search for Posts","hits_empty":"We did not find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}')
+
+        var algolia = {
+            applicationID: 'LW5UE4FX0Z',
+            apiKey: '802b81aa9844742a4a7401fd94546603',
+            indexName: 'archer-search',
+            hits: hits,
+            labels: labels
+        }
+    </script>
     <!-- 百度统计  -->
     
     <!-- 谷歌统计  -->
@@ -289,17 +303,7 @@ height:50vh;
     </div>
 </div>
         <script>
-  // load webfont-loader async, and add callback function
-  function async(u, cb, err) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
-    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
-  }
-  
+ 
   // get user agent
   var browser = {
     versions: function () {
@@ -363,6 +367,17 @@ height:50vh;
 
   function asyncErr(){
     console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
   }
 
   var asyncLoadWithFallBack = function(arr, success, reject) {
@@ -741,7 +756,17 @@ top:50vh;
     
     
     
-    <div class="total-archive"> Total : 16 </div>
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 16
+        <!-- search  -->
+        </div>
+        
+            <div class="site-search popup-trigger">
+                <span class="iconfont-archer search-icon">&#xe627;</span>
+            </div>
+        
+    </div>
     
     <div class="post-archive">
     
@@ -916,6 +941,9 @@ jsonContent:
         }
     </script>
     <script src="/archer-demo/scripts/main.js"></script>
+    <!-- algolia -->
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.8.0/dist/instantsearch.min.js" defer></script>
+    <script src="/archer-demo/scripts/search.js" defer></script>
     <!-- busuanzi  -->
     
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -927,6 +955,27 @@ jsonContent:
     
         <script src="/archer-demo/scripts/share.js" async></script>    
     
+    <!-- algolia  -->
+    <div class="site-search">
+  <div class="algolia-popup popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="iconfont-archer">&#xe609;</i>
+    </span>
+  </div>
+</div>    
     </body>
 </html>
 
